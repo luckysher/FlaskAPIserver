@@ -14,3 +14,10 @@ class SongsUtils:
         constructor
         """
         self.songsFile = "settings/songs.json"
+
+    def loadSongs(self):
+        """
+        Method for loading songs from songs.json file
+        :return: songslist
+        """
+        songs = []
