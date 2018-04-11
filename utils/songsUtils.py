@@ -21,3 +21,9 @@ class SongsUtils:
         :return: songslist
         """
         songs = []
+        try:
+            with open(self.songsFile) as sfile:
+
+        except Exception as e:
+
+        return songs
