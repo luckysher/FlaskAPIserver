@@ -27,3 +27,11 @@ class SongsUtils:
         except Exception as e:
 
         return songs
+
+    def getSongsList(self):
+        """
+        Method for returning a song on demand
+        :return:
+        """
+        songsList = self.loadSongs()
+        return songsList
