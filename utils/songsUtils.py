@@ -43,3 +43,7 @@ class SongsUtils:
         :param: artistname
         :return: songs list of particular artist
         """
+        artistSongs = []
+        songsList = self.loadSongs()
+        artistSongs = [song for song in songsList if song.get("artist") == artistname]
+        return artistSongs
