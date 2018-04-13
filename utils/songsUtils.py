@@ -35,3 +35,11 @@ class SongsUtils:
         """
         songsList = self.loadSongs()
         return songsList
+
+    def getSongsByArtist(self, artistname):
+        """
+        Method for returning list of songs of a
+        particular artist
+        :param: artistname
+        :return: songs list of particular artist
+        """
