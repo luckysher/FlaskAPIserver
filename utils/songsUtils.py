@@ -23,9 +23,10 @@ class SongsUtils:
         songs = []
         try:
             with open(self.songsFile) as sfile:
-
+                songs = json.load(sfile)
         except Exception as e:
-
+            print("Got exception while fetching songs from songs.json")
+            traceback.print_exc()
         return songs
 
     def getSongsList(self):
